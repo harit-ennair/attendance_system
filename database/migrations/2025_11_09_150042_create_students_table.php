@@ -16,10 +16,9 @@ return new class extends Migration
             $table->string('email_um6p')->unique();
             $table->string('health_insurance_number')->unique();
             $table->string('cin')->unique();
-            $table->integer('age');
             $table->date('date_naissance')->nullable();
             $table->string('ville');
-            $table->string('etudes');
+            $table->string('etudes')->nullable();
             $table->string('telephone');
             $table->timestamps();
         });
